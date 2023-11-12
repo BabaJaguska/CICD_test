@@ -1,16 +1,16 @@
 name: Test workflow
 
 on:
-	push:
-		branches: [master]
-	pull_request:
-		branches: [main]
+  push:
+    branches: [master]
+  pull_request:
+    branches: [main]
 
 jobs:
-	build:
-		runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-		steps:
-		-uses: actions/checkout@v2
-		-name: Run a one-line script
-		run: echo Well, hello there, yaml girls!
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Well, hello there, yaml girls!
